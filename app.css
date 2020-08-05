@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2d3748;
+  box-sizing: border-box;
+  background-color: rgb(226, 226, 226);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+section,
+.container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.heading {
+  margin: 1rem;
+  color: gray;
+  font-weight: 700;
+}
+
+.active {
+  color: #2d3748;
+}
+
+.container {
+  margin: auto;
+  max-width: 1110px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  border-top: 1px solid #d3d3d3bd;
+  padding: 0.75rem 0;
+}
+
+ul li:last-child {
+  border-bottom: 1px solid #d3d3d3bd;
+}
+
+.card {
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 0.5px solid rgba(206, 205, 205, 0.39);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  background-color: whitesmoke;
+}
+
+.card:nth-child(2) {
+  color: #fff;
+  background: #000066;
+  background: linear-gradient(330deg, #000066, #2f80ed);
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+.card:last-child {
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card:first-child {
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card h2 {
+  font-size: 4rem;
+  margin: 1rem;
+}
+
+.card .button {
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  background: #2f80ed;
+  border: 1px solid #2f80ed;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+
+.card .button:hover {
+  background: none;
+  border: 1px solid #2f80ed;
+  color: #2f80ed;
+}
+
+.toggle {
+  background: #000066;
+  background: linear-gradient(330deg, #000066, #2f80ed);
+  padding: 0.1rem;
+  border-radius: 2rem;
+  width: 50px;
+  display: flex;
+}
+
+.toggle .toggle-button {
+  padding: 0.7rem;
+  background-color: whitesmoke;
+  border: 1px solid rebeccapurple;
+  border-radius: 1rem;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1250px) {
+  .cards {
+    flex-direction: column;
+  }
+  section.cards,
+  .container {
+    display: block;
+  }
+  .section-toggle {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    display: block;
+    min-width: auto;
+  }
+}
